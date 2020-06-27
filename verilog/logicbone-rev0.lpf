@@ -1,0 +1,357 @@
+LOCATE COMP "clk" SITE "M19";
+IOBUF PORT "clk" IO_TYPE=LVCMOS18;
+
+#======================================
+# Bank 0: Expansion Header P9 and ADC
+#======================================
+LOCATE COMP "p9_gpio[11]" SITE "A11";
+LOCATE COMP "p9_gpio[12]" SITE "B11";
+LOCATE COMP "p9_gpio[13]" SITE "A10";
+LOCATE COMP "p9_gpio[14]" SITE "C10";
+LOCATE COMP "p9_gpio[15]" SITE "A9";
+LOCATE COMP "p9_gpio[16]" SITE "B9";
+LOCATE COMP "p9_gpio[17]" SITE "C11";
+LOCATE COMP "p9_gpio[18]" SITE "A8";
+LOCATE COMP "p9_gpio[21]" SITE "D9";
+LOCATE COMP "p9_gpio[22]" SITE "C8";
+LOCATE COMP "p9_gpio[23]" SITE "B8";
+LOCATE COMP "p9_gpio[24]" SITE "A7";
+LOCATE COMP "p9_gpio[25]" SITE "A6";
+LOCATE COMP "p9_gpio[26]" SITE "B6";
+LOCATE COMP "p9_gpio[27]" SITE "D8";
+LOCATE COMP "p9_gpio[42]" SITE "E10";
+LOCATE COMP "p9_clkout" SITE "B10";
+
+IOBUF PORT "p9_gpio[11]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[12]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[13]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[14]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[15]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[16]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[17]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[18]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[21]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[22]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[23]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[24]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[25]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[26]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[27]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_gpio[42]" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_clkout" IO_TYPE=LVCMOS33;
+
+LOCATE COMP "p9_spi_sclk" SITE "D6";
+LOCATE COMP "p9_spi_d0" SITE "D7";
+LOCATE COMP "p9_spi_d1" SITE "C6";
+LOCATE COMP "p9_spi_csel" SITE "C7";
+
+IOBUF PORT "p9_spi_sclk" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_spi_d0" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_spi_d1" IO_TYPE=LVCMOS33;
+IOBUF PORT "p9_spi_csel" IO_TYPE=LVCMOS33;
+
+LOCATE COMP "adc_csel" SITE "E6";
+LOCATE COMP "adc_miso" SITE "E8";
+LOCATE COMP "adc_mosi" SITE "D10";
+LOCATE COMP "adc_sclk" SITE "E9";
+
+IOBUF PORT "adc_csel" IO_TYPE=LVCMOS33;
+IOBUF PORT "adc_miso" IO_TYPE=LVCMOS33;
+IOBUF PORT "adc_mosi" IO_TYPE=LVCMOS33;
+IOBUF PORT "adc_sclk" IO_TYPE=LVCMOS33;
+
+#======================================
+# Bank 1: Ethernet, MicroSD and LEDs
+#======================================
+LOCATE COMP "led[0]" SITE "D16";
+LOCATE COMP "led[1]" SITE "C15";
+LOCATE COMP "led[2]" SITE "C13";
+LOCATE COMP "led[3]" SITE "B13";
+IOBUF PORT "led[0]" IO_TYPE=LVCMOS33;
+IOBUF PORT "led[1]" IO_TYPE=LVCMOS33;
+IOBUF PORT "led[2]" IO_TYPE=LVCMOS33;
+IOBUF PORT "led[3]" IO_TYPE=LVCMOS33;
+
+LOCATE COMP "usb_ufp_dp" SITE "B12";
+LOCATE COMP "usb_ufp_dm" SITE "C12";
+LOCATE COMP "usb_ufp_pull" SITE "C16";
+IOBUF PORT "usb_ufp_dp" IO_TYPE=LVCMOS33;
+IOBUF PORT "usb_ufp_dm" IO_TYPE=LVCMOS33;
+IOBUF PORT "usb_ufp_pull" IO_TYPE=LVCMOS33;
+
+LOCATE COMP "mmc_clk" SITE "E11";
+LOCATE COMP "mmc_det" SITE "D14";
+LOCATE COMP "mmc_cmd" SITE "D15";
+LOCATE COMP "mmc_dat[0]" SITE "D13";
+LOCATE COMP "mmc_dat[1]" SITE "E13";
+LOCATE COMP "mmc_dat[2]" SITE "E15";
+LOCATE COMP "mmc_dat[3]" SITE "E14";
+IOBUF PORT "mmc_clk" IO_TYPE=LVCMOS33;
+IOBUF PORT "mmc_det" IO_TYPE=LVCMOS33;
+IOBUF PORT "mmc_cmd" IO_TYPE=LVCMOS33;
+IOBUF PORT "mmc_dat[0]" IO_TYPE=LVCMOS33;
+IOBUF PORT "mmc_dat[1]" IO_TYPE=LVCMOS33;
+IOBUF PORT "mmc_dat[2]" IO_TYPE=LVCMOS33;
+IOBUF PORT "mmc_dat[3]" IO_TYPE=LVCMOS33;
+
+LOCATE COMP "mdio_clk" SITE "D12";
+LOCATE COMP "mdio_data" SITE "B19";
+LOCATE COMP "eth_txclk" SITE "A15";
+LOCATE COMP "eth_txctl" SITE "B15";
+LOCATE COMP "eth_txd[0]" SITE "A12";
+LOCATE COMP "eth_txd[1]" SITE "A13";
+LOCATE COMP "eth_txd[2]" SITE "C14";
+LOCATE COMP "eth_txd[3]" SITE "A14";
+LOCATE COMP "eth_rxclk" SITE "B18";
+LOCATE COMP "eth_rxctl" SITE "A18";
+LOCATE COMP "eth_rxd[0]" SITE "B17";
+LOCATE COMP "eth_rxd[1]" SITE "A17";
+LOCATE COMP "eth_rxd[2]" SITE "B16";
+LOCATE COMP "eth_rxd[3]" SITE "A16";
+LOCATE COMP "eth_int" SITE "B20";
+LOCATE COMP "eth_refclk" SITE "A19";
+LOCATE COMP "eth_reset" SITE "C17";
+IOBUF PORT "mdio_clk" IO_TYPE=LVCMOS33;
+IOBUF PORT "mdio_data" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_txclk" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_txctl" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_txd[0]" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_txd[1]" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_txd[2]" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_txd[3]" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_rxclk" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_rxctl" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_rxd[0]" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_rxd[1]" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_rxd[2]" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_rxd[3]" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_int" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_refclk" IO_TYPE=LVCMOS33;
+IOBUF PORT "eth_reset" IO_TYPE=LVCMOS33;
+
+#======================================
+# Bank 2: Expansion Header P8
+#======================================
+# TODO: Should probably go and rename a bunch of these pins on the schematic.
+
+#======================================
+# Bank 3: m.2/PCIe Connector
+#======================================
+LOCATE COMP "m2_sdio_reset" SITE "L20";
+LOCATE COMP "m2_sdio_wake" SITE "N20";
+LOCATE COMP "m2_sdio_clk" SITE "T17";
+LOCATE COMP "m2_sdio_cmd" SITE "U19";
+LOCATE COMP "m2_sdio_data[0]" SITE "U20";
+LOCATE COMP "m2_sdio_data[1]" SITE "T20";
+LOCATE COMP "m2_sdio_data[2]" SITE "R20";
+LOCATE COMP "m2_sdio_data[3]" SITE "P20";
+IOBUF PORT "m2_sdio_reset" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_sdio_wake" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_sdio_clk" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_sdio_cmd" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_sdio_data[0]" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_sdio_data[1]" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_sdio_data[2]" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_sdio_data[3]" IO_TYPE=LVCMOS18;
+
+LOCATE COMP "m2_alert" SITE "L19";
+LOCATE COMP "m2_susclk" SITE "L16";
+LOCATE COMP "m2_wdis[1]" SITE "L17";
+LOCATE COMP "m2_wdis[2]" SITE "M18";
+LOCATE COMP "m2_coex[1]" SITE "P18";
+LOCATE COMP "m2_coex[2]" SITE "N18";
+LOCATE COMP "m2_coex[3]" SITE "N17";
+LOCATE COMP "m2_vend[0]" SITE "P19";
+LOCATE COMP "m2_vend[1]" SITE "T19";
+LOCATE COMP "m2_vend[2]" SITE "P17";
+IOBUF PORT "m2_alert" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_susclk" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_wdis[1]" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_wdis[2]" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_coex[1]" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_coex[2]" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_coex[3]" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_vend[0]" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_vend[1]" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_vend[2]" IO_TYPE=LVCMOS18;
+
+LOCATE COMP "m2_pcm_clk" SITE "U16";
+LOCATE COMP "m2_pcm_in" SITE "P16";
+LOCATE COMP "m2_pcm_out" SITE "T16";
+LOCATE COMP "m2_pcm_sync" SITE "N16";
+IOBUF PORT "m2_pcm_clk" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_pcm_in" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_pcm_out" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_pcm_sync" IO_TYPE=LVCMOS18;
+
+LOCATE COMP "m2_uart_wake" SITE "T18";
+LOCATE COMP "m2_uart_rxd" SITE "R17";
+LOCATE COMP "m2_uart_txd" SITE "U17";
+LOCATE COMP "m2_uart_cts" SITE "R18";
+LOCATE COMP "m2_uart_rts" SITE "U18";
+IOBUF PORT "m2_uart_wake" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_uart_rxd" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_uart_txd" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_uart_cts" IO_TYPE=LVCMOS18;
+IOBUF PORT "m2_uart_rts" IO_TYPE=LVCMOS18;
+
+LOCATE COMP "pcie_wake0" SITE "L18";
+LOCATE COMP "pcie_wake1" SITE "M20";
+LOCATE COMP "pcie_reset0" SITE "M17";
+LOCATE COMP "pcie_reset1" SITE "N19";
+IOBUF PORT "pcie_wake0" IO_TYPE=LVCMOS18;
+IOBUF PORT "pcie_wake1" IO_TYPE=LVCMOS18;
+IOBUF PORT "pcie_reset0" IO_TYPE=LVCMOS18;
+IOBUF PORT "pcie_reset1" IO_TYPE=LVCMOS18;
+
+LOCATE COMP "refclk" SITE "M19";
+IOBUF PORT "refclk" IO_TYPE=LVCMOS18;
+
+#======================================
+# Bank 6 and 7: DDR3L Memory
+#======================================
+LOCATE COMP "ddr3_dq[0]" SITE "G2";
+LOCATE COMP "ddr3_dq[1]" SITE "K1";
+LOCATE COMP "ddr3_dq[2]" SITE "F1";
+LOCATE COMP "ddr3_dq[3]" SITE "K3";
+LOCATE COMP "ddr3_dq[4]" SITE "H2";
+LOCATE COMP "ddr3_dq[5]" SITE "J3";
+LOCATE COMP "ddr3_dq[6]" SITE "G1";
+LOCATE COMP "ddr3_dq[7]" SITE "K1";
+LOCATE COMP "ddr3_dqs0p" SITE "K2";
+LOCATE COMP "ddr3_dqs0m" SITE "J1";
+
+LOCATE COMP "ddr3_dq[8]" SITE "B1";
+LOCATE COMP "ddr3_dq[9]" SITE "E1";
+LOCATE COMP "ddr3_dq[10]" SITE "A2";
+LOCATE COMP "ddr3_dq[11]" SITE "F2";
+LOCATE COMP "ddr3_dq[12]" SITE "C1";
+LOCATE COMP "ddr3_dq[13]" SITE "E2";
+LOCATE COMP "ddr3_dq[14]" SITE "C2";
+LOCATE COMP "ddr3_dq[15]" SITE "D1";
+LOCATE COMP "ddr3_dqs1p" SITE "H4";
+LOCATE COMP "ddr3_dqs1m" SITE "G5";
+
+LOCATE COMP "ddr3_a[0]" SITE "D5";
+LOCATE COMP "ddr3_a[1]" SITE "F4";
+LOCATE COMP "ddr3_a[2]" SITE "B3";
+LOCATE COMP "ddr3_a[3]" SITE "F3";
+LOCATE COMP "ddr3_a[4]" SITE "E5";
+LOCATE COMP "ddr3_a[5]" SITE "C3";
+LOCATE COMP "ddr3_a[6]" SITE "C4";
+LOCATE COMP "ddr3_a[7]" SITE "A5";
+LOCATE COMP "ddr3_a[8]" SITE "A3";
+LOCATE COMP "ddr3_a[9]" SITE "A9";
+LOCATE COMP "ddr3_a[10]" SITE "G3";
+LOCATE COMP "ddr3_a[11]" SITE "F5";
+LOCATE COMP "ddr3_a[12]" SITE "D2";
+LOCATE COMP "ddr3_a[13]" SITE "A4";
+LOCATE COMP "ddr3_a[14]" SITE "D3";
+LOCATE COMP "ddr3_a[15]" SITE "E3";
+
+LOCATE COMP "ddr3_dm[0]" SITE "L4";
+LOCATE COMP "ddr3_dm[1]" SITE "J5";
+LOCATE COMP "ddr3_ba[0]" SITE "B4";
+LOCATE COMP "ddr3_ba[1]" SITE "H5";
+LOCATE COMP "ddr3_ba[2]" SITE "N2";
+LOCATE COMP "ddr3_ckp" SITE "K2";
+LOCATE COMP "ddr3_ckm" SITE "J1";
+
+LOCATE COMP "ddr3_cas" SITE "M1";
+LOCATE COMP "ddr3_ras" SITE "L1";
+LOCATE COMP "ddr3_odt" SITE "C5";
+LOCATE COMP "ddr3_we" SITE "E4";
+LOCATE COMP "ddr3_reset" SITE "P1";
+LOCATE COMP "ddr3_cs" SITE "M3";
+LOCATE COMP "ddr3_cke" SITE "K4";
+# FIXME: Not sure how to configure vref pins.
+#LOCATE VREF "ddr3_vref" SITE "B2" IOTYPE "SSTL135_I";
+#LOCATE VREF "ddr3_vref" SITE "K5" IOTYPE "SSTL135_I";
+
+IOBUF PORT "ddr3_dq[0]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[1]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[2]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[3]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[4]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[5]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[6]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[7]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dqs0p" IO_TYPE=SSTL135D_I;
+IOBUF PORT "ddr3_dqs0p" IO_TYPE=SSTL135D_I;
+
+IOBUF PORT "ddr3_dq[8]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[9]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[10]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[11]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[12]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[13]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[14]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dq[15]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dqs1p" IO_TYPE=SSTL135D_I;
+IOBUF PORT "ddr3_dqs1p" IO_TYPE=SSTL135D_I;
+
+IOBUF PORT "ddr3_a[0]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[1]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[2]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[3]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[4]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[5]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[6]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[7]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[8]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[9]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[10]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[11]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[12]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[13]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[14]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_a[15]" IO_TYPE=SSTL135_I;
+
+IOBUF PORT "ddr3_dm[0]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_dm[1]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_ba[0]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_ba[1]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_ba[2]" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_ckp" IO_TYPE=SSTL135D_I;
+IOBUF PORT "ddr3_ckm" IO_TYPE=SSTL135D_I;
+
+IOBUF PORT "ddr3_cas" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_ras" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_odt" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_we" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_reset" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_cs" IO_TYPE=SSTL135_I;
+IOBUF PORT "ddr3_cke" IO_TYPE=SSTL135_I;
+
+#======================================
+# Bank 8: Programming and Debug
+#======================================
+LOCATE COMP "usb_dfp_dp" SITE "R1";
+LOCATE COMP "usb_dfp_dm" SITE "T1";
+LOCATE COMP "usb_dfp_pull" SITE "T2";
+LOCATE COMP "usb_dfp_orient" SITE "R3";
+LOCATE COMP "usb_dfp_int" SITE "T3";
+LOCATE COMP "i2c_scl" SITE "U1";
+LOCATE COMP "i2c_sda" SITE "V1";
+LOCATE COMP "flash_d3" SITE "W1";
+LOCATE COMP "flash_d2" SITE "Y2";
+LOCATE COMP "flash_miso" SITE "V2";
+LOCATE COMP "flash_mosi" SITE "W2";
+LOCATE COMP "flash_csel" SITE "R2";
+LOCATE COMP "flash_sclk" SITE "U3";
+LOCATE COMP "pwr_button" SITE "U2";
+
+IOBUF PORT "usb_dfp_dp" IO_TYPE=LVCMOS33;
+IOBUF PORT "usb_dfp_dm" IO_TYPE=LVCMOS33;
+IOBUF PORT "usb_dfp_pull" IO_TYPE=LVCMOS33;
+IOBUF PORT "usb_dfp_orient" IO_TYPE=LVCMOS33;
+IOBUF PORT "usb_dfp_int" IO_TYPE=LVCMOS33;
+IOBUF PORT "i2c_scl" IO_TYPE=LVCMOS33;
+IOBUF PORT "i2c_sda" IO_TYPE=LVCMOS33;
+IOBUF PORT "flash_d3" IO_TYPE=LVCMOS33;
+IOBUF PORT "flash_d2" IO_TYPE=LVCMOS33;
+IOBUF PORT "flash_miso" IO_TYPE=LVCMOS33;
+IOBUF PORT "flash_mosi" IO_TYPE=LVCMOS33;
+IOBUF PORT "flash_csel" IO_TYPE=LVCMOS33;
+IOBUF PORT "flash_sclk" IO_TYPE=LVCMOS33;
+IOBUF PORT "pwr_button" IO_TYPE=LVCMOS33;
