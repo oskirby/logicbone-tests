@@ -1,5 +1,18 @@
-LOCATE COMP "clk" SITE "M19";
-IOBUF PORT "clk" IO_TYPE=LVCMOS18;
+LOCATE COMP "refclk" SITE "M19";
+IOBUF PORT "refclk" IO_TYPE=LVCMOS18;
+
+#======================================
+# Bank 2: Expansion Header P8 - DEBUG
+#======================================
+LOCATE COMP "debug[0]" SITE "C20";
+LOCATE COMP "debug[1]" SITE "D20";
+LOCATE COMP "debug[2]" SITE "E20";
+LOCATE COMP "debug[3]" SITE "F20";
+
+IOBUF PORT "debug[0]" IO_TYPE=LVCMOS33;
+IOBUF PORT "debug[1]" IO_TYPE=LVCMOS33;
+IOBUF PORT "debug[2]" IO_TYPE=LVCMOS33;
+IOBUF PORT "debug[3]" IO_TYPE=LVCMOS33;
 
 #======================================
 # Bank 0: Expansion Header P9 and ADC
